@@ -26,8 +26,30 @@ if(playerInput == '1'){
   playerMove = 'kamień';
 } else if(playerInput == '2'){
     playerMove = 'papier';
-} else {
+} else if(playerInput == '3'){
     playerMove = 'nozyce';
 }
 
 printMessage('Twój ruch to: ' + playerMove);
+
+if( computerMove == 'kamień' && playerMove == 'papier'){
+    printMessage('Ty wygrywasz!');
+} else if( computerMove == 'kamień' && playerMove == 'nozyce'){
+    printMessage('Ja wygrywam!');
+} else if( computerMove == 'papier' && playerMove == 'kamień'){
+    printMessage('Ja wygrywam!');
+} else if( computerMove == 'papier' && playerMove == 'nozyce'){
+    printMessage('Ty wygrywasz!');
+} else if( computerMove == 'nozyce' && playerMove == 'papier'){
+    printMessage('Ja wygrywam!');
+} else if( computerMove == 'nozyce' && playerMove == 'kamień'){
+    printMessage('Ty wygrywasz!');
+} else if( computerMove == 'nozyce' && playerMove == 'nieznany ruch'){
+    printMessage('BŁĄD SYSTEMU');
+} else if( computerMove == 'papier' && playerMove == 'nieznany ruch'){
+    printMessage('BŁĄD SYSTEMU');
+} else if( computerMove == 'kamień' && playerMove == 'nieznany ruch'){
+    printMessage('BŁĄD SYSTEMU');
+} else{
+    printMessage('Remis!');
+}
