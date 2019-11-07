@@ -24,6 +24,10 @@ let playerMove = 'nieznany ruch';
 
 if(playerInput == '1'){
   playerMove = 'kamień';
+} else if(playerInput == '2'){
+    playerMove = 'papier';
+} else {
+    playerMove = 'nozyce';
 }
 
 printMessage('Twój ruch to: ' + playerMove);
