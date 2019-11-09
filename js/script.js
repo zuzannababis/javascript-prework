@@ -5,14 +5,14 @@ function playGame(playerInput){
 
   function getMoveName(randomNumber){
 	  if(randomNumber == 1){
-	  return 'kamień';
-	  } else if(randomNumber == 2){
-	    return 'papier';
-	  } else if(randomNumber == 3){
-	    return 'nożyce';
-	  } else {
-	    printMessage('Nie znam ruchu o id ' + randomNumber + '.');
-	    return 'nieznany ruch';
+	    return 'kamień';
+	    } else if(randomNumber == 2){
+	      return 'papier';
+	    } else if(randomNumber == 3){
+	      return 'nożyce';
+	    } else {
+	      printMessage('Nie znam ruchu o id ' + randomNumber + '.');
+	      return 'nieznany ruch';
 	  } 
     }
 
@@ -70,7 +70,7 @@ function playGame(playerInput){
 		  printMessage('BŁĄD SYSTEMU');
 	  } else if( argComputerMove == 'kamień' && argPlayerMove == 'nieznany ruch'){
 		  printMessage('BŁĄD SYSTEMU');
-	  } else{
+	  } else {
 		  printMessage('Remis!');
     }
   }
