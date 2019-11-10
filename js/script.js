@@ -6,15 +6,15 @@ function playGame(playerInput){
   function getMoveName(randomNumber){
 	  if(randomNumber == 1){
 	    return 'kamień';
-	    } else if(randomNumber == 2){
-	      return 'papier';
-	    } else if(randomNumber == 3){
-	      return 'nożyce';
-	    } else {
-	      printMessage('Nie znam ruchu o id ' + randomNumber + '.');
-	      return 'nieznany ruch';
+	  } else if(randomNumber == 2){
+	    return 'papier';
+	  } else if(randomNumber == 3){
+	    return 'nożyce';
+	  } else {
+	    printMessage('Nie znam ruchu o id ' + randomNumber + '.');
+	    return 'nieznany ruch';
 	  } 
-    }
+  }
 
 
   let randomNumber = Math.floor(Math.random() * 3 + 1);
